@@ -1,0 +1,24 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "name": "Pacote de Papel",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Lego",
+      "price": 80
+    },
+    {
+      "id": 3,
+      "name": "MacPro",
+      "price": 12000.99
+    },
+    {
+      "id": 4,
+      "name": "Cobertor",
+      "price": 120.5
+    }
+  ]
+}
