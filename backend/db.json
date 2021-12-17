@@ -1,5 +1,6 @@
+
 {
-  "produto": [
+  "produtos": [
     {
       "id": 1,
       "name": "Pacote de Papel",
@@ -19,11 +20,6 @@
       "id": 4,
       "name": "Cobertor",
       "price": 120.5
-    },
-    {
-      "id": 5,
-      "name": "Camisa",
-      "price": 150.5
     }
   ]
 }
