@@ -9,3 +9,9 @@
 .sidenav  i{
     padding-right: 10px;
 }
+
+.conteudo{
+    padding: 16px;
+    color: black;
+    background-color: white;
+}
