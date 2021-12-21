@@ -5,7 +5,7 @@ import './views/home/home.component';
 import { HomeComponent } from './views/home/home.component';
 import './views/products-crud/products-crud.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
-
+import { ProductsCreateComponent } from './components/product/products-create/products-create.component';
 
 // Cada Objeto desse array traz uma rota da aplicação (Criada ao iniciar o Angular CLI) onde agora sera permitido navegar pelo crud
 const routes: Routes = [{
@@ -15,6 +15,10 @@ const routes: Routes = [{
 {
   path:"produtos",
   component:ProductsCrudComponent
+},
+{
+  path:"produtos/create",
+  component:ProductsCreateComponent
 }
 ];
 
