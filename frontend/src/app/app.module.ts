@@ -13,6 +13,7 @@ import { NavigationComponent } from './components/template/navigation/navigation
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
 import { RedDirective } from './directives/red.directive';
@@ -36,7 +37,8 @@ import { ProductsCreateComponent } from './components/product/products-create/pr
     MatToolbarModule ,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
