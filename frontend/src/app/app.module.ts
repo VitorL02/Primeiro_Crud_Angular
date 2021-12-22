@@ -14,10 +14,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { HomeComponent } from './views/home/home.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductsCreateComponent } from './components/product/products-create/products-create.component';
+import { RedBackgroundDirective } from './directives/red-background.directive';
+import { BlueBackgroundDirective } from './directives/blue-background.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { ProductsCreateComponent } from './components/product/products-create/pr
     HomeComponent,
     ProductsCrudComponent,
     RedDirective,
-    ProductsCreateComponent
+    ProductsCreateComponent,
+    RedBackgroundDirective,
+    BlueBackgroundDirective
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { ProductsCreateComponent } from './components/product/products-create/pr
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
