@@ -27,7 +27,8 @@ import { ProductsCreateComponent } from './components/product/products-create/pr
 import { RedBackgroundDirective } from './directives/red-background.directive';
 import { BlueBackgroundDirective } from './directives/blue-background.directive';
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ProductReadComponent } from './components/product/product-read/product-read.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {HttpClientModule} from '@angular/common/http'
     RedDirective,
     ProductsCreateComponent,
     RedBackgroundDirective,
-    BlueBackgroundDirective
+    BlueBackgroundDirective,
+    ProductReadComponent
   ],
   imports: [
     BrowserModule,
