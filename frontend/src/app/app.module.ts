@@ -6,21 +6,28 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavigationComponent } from './components/template/navigation/navigation.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import{FormsModule}from '@angular/forms'
+import{MatFormFieldModule}from '@angular/material/form-field'
+import{MatInputModule}from '@angular/material/input'
+
 import { HomeComponent } from './views/home/home.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
 import { RedDirective } from './directives/red.directive';
 import { ProductsCreateComponent } from './components/product/products-create/products-create.component';
 import { RedBackgroundDirective } from './directives/red-background.directive';
 import { BlueBackgroundDirective } from './directives/blue-background.directive';
+
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -44,7 +51,11 @@ import { BlueBackgroundDirective } from './directives/blue-background.directive'
     MatListModule,
     MatCardModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
