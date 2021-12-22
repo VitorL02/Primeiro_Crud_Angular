@@ -3,6 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+input{
+    /* troca a cor da linha quando o placeholder esta ativo */
+    caret-color: white !important;
+}
 .v-middle{
     /* classe para centralizar qualquer icone na aplicação */
     vertical-align: middle;
@@ -11,3 +15,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: white;
     background-color: #222222;
 }
+ 
+.mat-focused .placeholder{
+    color: #FFF;
+
+}
+.mat-form-field-underline  {
+    background-color: #fff !important;
+  } 
+.mat-form-field-ripple {
+
+    background-color: #fff !important;
+   }
+
+.mat-focused .mat-form-field-label {
+
+    color: #fff !important;
+}
+
+
