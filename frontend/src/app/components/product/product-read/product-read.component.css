@@ -2,4 +2,21 @@ table{
     width: 100%;
     
 }
+i{
+    margin-right: 10px;
+}
 
+i.edit{
+    color: #fff;
+}
+
+i.edit:hover{
+    color: rgb(173, 173, 173);
+}
+
+i.delete{
+  color: #e35e6b ;
+}
+i.delete:hover{
+    color: #c52636 ;
+  }
