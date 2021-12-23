@@ -37,6 +37,7 @@ import { ProductReadTableModelComponent } from './components/product-read-table-
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 
 registerLocaleData(localePt);
 
@@ -53,7 +54,8 @@ registerLocaleData(localePt);
     RedBackgroundDirective,
     BlueBackgroundDirective,
     ProductReadComponent,
-    ProductReadTableModelComponent
+    ProductReadTableModelComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,

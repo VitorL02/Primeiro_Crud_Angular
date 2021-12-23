@@ -33,10 +33,14 @@ export class ProductService {
     return this.http.get<Produto[]>(this.urlBackend)
   }
 
-  readyProductById(id:string): Observable<Produto>{
+  readProductById(id:string): Observable<Produto>{
     const urlProdutoId = `${this.urlBackend}/${id}`
     return this.http.get<Produto>(urlProdutoId)
+  }
 
+  updateProduct(produto:Produto):Observable <Produto>{
+    const urlProdutoId = `${this.urlBackend}/${produto.id}`
+    return this.http.put<Produto>(urlProdutoId,produto)
   }
   
 }
