@@ -32,5 +32,11 @@ export class ProductService {
   readProduct():Observable<Produto[]>{
     return this.http.get<Produto[]>(this.urlBackend)
   }
+
+  readyProductById(id:string): Observable<Produto>{
+    const urlProdutoId = `${this.urlBackend}/${id}`
+    return this.http.get<Produto>(urlProdutoId)
+
+  }
   
 }
