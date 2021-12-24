@@ -11,9 +11,13 @@ input{
     /* classe para centralizar qualquer icone na aplicação */
     vertical-align: middle;
 }
-.black-snackbar{
+.sucess-snackbar{
     color: white;
-    background-color: #222222;
+    background-color: #28a745;
+}
+.error-snackbar{
+    color: white;
+    background-color: #e35e6b;
 }
  
 .mat-focused .placeholder{
@@ -32,5 +36,6 @@ input{
 
     color: #fff !important;
 }
+
 
 
