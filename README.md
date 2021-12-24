@@ -33,23 +33,23 @@ Technologies
 <h1 align="center">Funcionamento</h1>
 <p>
 Utilizando o Angular CLI foram criados os componentes de Home,Header,Footer,Navigation,Product-Crud,Product-Read,Product-Create/Update/delete/Read,onde possuem cada um três
-arquivos (separados via configuração em angular.json) Um Html5 CSS3 e TypeScript  
-  <strong> </strong> <br>
-<h3> index.php : Redireciona o Usuario para tela de cadastro ou a de login no sistema </h3> 
-<h3> cadastro.php : Permite um usuario a realizar cadastro no banco de dados (Somente usuarios cadastrados conseguem acessar sistema.php (caso o login do mesmo seja correto)) 
+arquivos (separados via configuração em angular.json) Um Html5 CSS3 e TypeScript, o fluxo do sistema é o seguinte > Home > Cadastro de Produtos > Lista de Produto. Em lista de produtos é possivel duas rotas serem acessadas, clicando no icone de atualização é possivel acessar a edição do produto,sendo possivel alterar preço e nome, já clicando no icone de delete e possivel deletar um produto (podendo cancelar a ação). 
+<br>
+<h3> Components : Contém todos os componentes da Aplicação </h3> 
+<h3> Views : Contendo a Home Page com as boas vindas e contendo Product Crud onde a lista de produtos e exibida carregando com ajuda do angular o componente <app-product-read>
 </h3> 
-<h3> login.php : Caso o Usuario tenha criado um Login o Mesmo consegue acessar <strong>sistema.php</strong> Que permite alterar os registros dos usuarios  </h3> 
-<h3> sistema.php : Lista todos os usuarios do banco de dados já cadastrados </h3> 
-<h3> edit.php : Caso em algum registro seja necessario alteração a pagina de edit.php traz o registro do usuario selecionado via ID </h3> 
+<h3> Directives : Contém as Diretivas de Estilo que foram utilizadas para alterar as cores dos botões</h3> 
+<h3> Product > product.service.ts : Criado com ajuda do angular, contém toda a logica de acesso aos dados do backend e funções/metodos utilizados na aplicação</h3> 
+<h3> Product > product.model.ts : Contém os dados comuns que todo produto tem (Classe produto)</h3> 
+<h3> Product > Product-Read-table-Model : Utilizado como modelo para a criação da tabela de produtos</h3> 
+<h3> Assets: Possui a logo da aplicação  </h3> 
 
 <h2 align="center"> 
 	Arquivos de Configuração
 </h2>
-<h3> config.php : Realiza toda a conexão com o banco de dados</h3>
-<h3> sair.php : Toda vez que um usario solicita sair do sistema todos os dados da sessões são limpos,permitindo um novo login</h3>
-<h3> saveEdit.php : Se um usuario estiver logado ele permite editar registros,esse arquivo realiza os updates nos devidos usuarios </h3>
-<h3> testeLogin.php : Realiza as verificações se o usuario esta realmente logado para acessar o sistema,não permite que se caso o usuario não esteja em uma sessão acesse as paginas via URL </h3>
-<h3> Database > Usuarios.sql : Todo o banco de dados criado via MYSQL </h3>
+<h3> App-Routing.ts: Nesse arquivo foram mapeadas todas as rotas da aplicação  </h3> 
+<h3> App.Module.ts: Contém todos os imports utilizados na aplicação incluindo imports feitos pelo Material </h3> 
+<h3> BackEnd > db.json : Contém os produtos em forma de arquivo json,onde e consumido pelo frontEnd,todo produto adicionado adiciona um novo objeto a esse arquivo </h3>
 </p>
 
 
