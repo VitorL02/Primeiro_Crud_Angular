@@ -23,7 +23,7 @@ export class ProductsCreateComponent implements OnInit {
   creatProduct():void{
     // Metodo Subriscribe notifica quando a resposta foi entregue para o servidor
     this.productService.create(this.produto).subscribe(()=>{
-       this.productService.showMessage('Produto Criado')
+       this.productService.showMessage('Produto Cadastrado com sucesso')
         this.router.navigate(['/produtos'])
     })
 

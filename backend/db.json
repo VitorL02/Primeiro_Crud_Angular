@@ -19,6 +19,11 @@
       "name": "Camiseta",
       "price": 40,
       "id": 5
+    },
+    {
+      "name": "Cooler",
+      "price": 50,
+      "id": 6
     }
   ]
 }
