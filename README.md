@@ -38,11 +38,11 @@ arquivos (separados via configuração em angular.json) Um Html5 CSS3 e TypeScri
 <h3> Components : Contém todos os componentes da Aplicação </h3> 
 <h3> Views : Contendo a Home Page com as boas vindas e contendo Product Crud onde a lista de produtos e exibida carregando com ajuda do angular o componente <app-product-read>
 </h3> 
+<h3> Assets: Possui a logo da aplicação  </h3> 	
 <h3> Directives : Contém as Diretivas de Estilo que foram utilizadas para alterar as cores dos botões</h3> 
 <h3> Product > product.service.ts : Criado com ajuda do angular, contém toda a logica de acesso aos dados do backend e funções/metodos utilizados na aplicação</h3> 
 <h3> Product > product.model.ts : Contém os dados comuns que todo produto tem (Classe produto)</h3> 
 <h3> Product > Product-Read-table-Model : Utilizado como modelo para a criação da tabela de produtos</h3> 
-<h3> Assets: Possui a logo da aplicação  </h3> 
 
 <h2 align="center"> 
 	Arquivos de Configuração
