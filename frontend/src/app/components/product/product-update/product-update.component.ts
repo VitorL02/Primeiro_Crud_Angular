@@ -16,7 +16,7 @@ export class ProductUpdateComponent implements OnInit {
 
   //Para que o formulario venha preenchido foi necessario receber o id via rotas assim conseguindo receber os dados do produto
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get("id");
+    const id = +this.route.snapshot.paramMap.get("id");
     this.productService.readProductById(id).subscribe((produto) =>{
     this.produto = produto;
   });

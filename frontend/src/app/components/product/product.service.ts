@@ -33,16 +33,20 @@ export class ProductService {
     return this.http.get<Produto[]>(this.urlBackend)
   }
 
-  readProductById(id:string): Observable<Produto>{
+  readProductById(id:number): Observable<Produto>{
     const urlProdutoId = `${this.urlBackend}/${id}`
     return this.http.get<Produto>(urlProdutoId)
   }
 
   updateProductService(produto:Produto):Observable <Produto>{
     const urlProdutoId = `${this.urlBackend}/${produto.id}`
-    return this.http.put<Produto>(urlProdutoId,produto)
+    return this.http.put<Produto>(urlProdutoId,produto);
   }
 
+  deleteProduct(id:number):Observable<Produto>{
+    const urlProdutoId = `${this.urlBackend}/${id}`
+    return this.http.delete<Produto>(urlProdutoId);
+  }
 
   
 }
