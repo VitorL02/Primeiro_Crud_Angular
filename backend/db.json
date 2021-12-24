@@ -1,11 +1,6 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "name": "Pacote de Papel",
-      "price": 5.89
-    },
-    {
       "id": 2,
       "name": "Lego",
       "price": 80
@@ -21,9 +16,9 @@
       "price": 120.5
     },
     {
-      "id": 5,
-      "name": "Camisa",
-      "price": 150.5
+      "name": "Camiseta",
+      "price": 40,
+      "id": 5
     }
   ]
 }

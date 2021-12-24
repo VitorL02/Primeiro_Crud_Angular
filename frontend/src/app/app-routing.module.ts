@@ -7,6 +7,7 @@ import './views/products-crud/products-crud.component';
 import { ProductsCrudComponent } from './views/products-crud/products-crud.component';
 import { ProductsCreateComponent } from './components/product/products-create/products-create.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 // Cada Objeto desse array traz uma rota da aplicação (Criada ao iniciar o Angular CLI) onde agora sera permitido navegar pelo crud
 const routes: Routes = [{
@@ -24,6 +25,10 @@ const routes: Routes = [{
 {
   path:"produtos/update/:id",
   component:ProductUpdateComponent
+},
+{
+  path:"produtos/delete/:id",
+  component:ProductDeleteComponent
 }
 ];
 

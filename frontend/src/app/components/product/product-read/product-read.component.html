@@ -1,4 +1,6 @@
-<div class="mat-elevation-z4">
+<mat-card>
+  <mat-card-title>Lista de Produtos</mat-card-title>
+<div class="mat-elevation-z4 table-product">
     <table mat-table [dataSource]='produtos'>
 
       <ng-container matColumnDef="id">
@@ -27,7 +29,7 @@
             </i>
           </a>
 
-          <a routerLink=''>
+          <a routerLink='/produtos/delete/{{row.id}}'>
             <i class="material-icons delete" >
               delete
             </i>
@@ -42,4 +44,4 @@
    
 
   </div>
-  
+</mat-card>
